@@ -45,18 +45,12 @@ export const Comment:React.FC<Props> = (props) => {
                 <div className="comment-Box">
                     <div className='comment-info'>
                         <p className="comment-name">
-                            <span>{item.name}</span> 
                             <span className="comment-post_name">{item.name}</span> 
                         </p>
                     </div>
                     {
                         item.commentBox.map((comment, id)=>
                             <div key={id}>
-                                <div className="comment-msg" >{comment.comment_msg}</div>
-                                <div className="comment-status">
-                                    <span className="comment-time">{comment.comment_time}</span>
-                                    <span className="comment-flag">{comment.comment_reply}</span>
-                                </div>
                                 <div className="comment-msg">{comment.comment_msg}</div>
                                 <div className="comment-status">
                                     <span className="comment-time">{comment.comment_time}</span>
